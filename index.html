@@ -1,1 +1,272 @@
-Lorem ipsum dolor sit amet.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Ulysse</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Font awesome. -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="assets/css/flat-ui.css" rel="stylesheet">
+
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" type="text/css">
+
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <style>
+      /* Yay for responsive CSS! */
+      @media (max-width: 650px) {
+        .main-img {
+          width: 180px;
+        }
+
+        .section-intro h1 {
+          font-size: 45px;
+          margin-bottom: 20px;
+        }
+
+        .lead {
+          font-size: 18px;
+          margin-bottom: 0px;
+        }
+
+        ul.social li {
+          margin-right: 10px;
+          font-size: 28px;
+        }
+
+        .column {
+          max-width: 300px;
+        }
+
+        .headline {
+          margin-top: -15px;
+          margin-bottom: 15px;
+        }
+      }
+
+      @media (min-width: 650px) {
+        .main-img {
+          width: 250px;
+        }
+
+        .section-intro h1 {
+          font-size: 72px;
+          margin-bottom: 33px;
+        }
+
+        .lead {
+          font-size: 28px;
+        }
+
+        ul.social li {
+          margin-right: 25px;
+        }
+
+        .column {
+          max-width: 600px;
+        }
+
+        .headline {
+          margin-top: 0px;
+          margin-bottom: 55px;
+        }
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      h1 {
+        font-family: 'Lobster', Georgia, Times, serif;
+      }
+
+      h2 {
+        color: white;
+        text-align: center;
+      }
+
+      section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        min-width: 100%;
+      }
+
+      .column {
+        margin: 0px auto;
+      }
+
+      .section-intro {
+        padding-top: 30px;
+        background-color: #3498db;
+        text-align: center;
+        color: rgb(16, 90, 119);
+      }
+
+      ul .social {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      ul.social li {
+        padding: 0;
+        display: inline-block;
+        margin-top: 20px;
+        vertical-align: top;
+        font-size: 32px;
+      }
+
+      ul.social li a {
+        color: rgb(16, 90, 119);
+      }
+
+      ul.social li a p {
+        margin-top: 20px;
+      }
+
+      ul.social li:hover {
+        color: white;
+      }
+
+      ul.social li a:hover {
+        color: white;
+      }
+
+      .call-to-arms {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 16px;
+        display: block;
+      }
+
+      .section-hi {
+        background-color: #7ec9ac;
+        color: #357f63;
+      }
+
+      .section-hi a {
+        color: #b1f6db;
+      }
+
+      .section-turk {
+        background-color: #e06d5e;
+        color: #fbdcd8;
+      }
+
+      .section-turk a {
+        color: #fbbeb6;
+      }
+
+      .section-inter {
+        background-color: #f3f3e9;
+        color: #a7a9ac;
+      }
+
+      .section-inter a {
+        color: rgb(132, 137, 145);
+      }
+
+      .section-inter h2 {
+        color: #555;
+      }
+
+      .section-chess {
+        background-color: #fcead5;
+        color: #7f6c55;
+      }
+
+      .section-chess a {
+        color: #ad6c29;
+      }
+
+      .section-chess h2 {
+        color: #675743;
+      }
+
+      .section-footer {
+        background-color: #282a2b;
+        color: #7a7a7a;
+      }
+
+      .section-footer a {
+        color: rgb(180, 180, 180);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="section-intro">
+        <div class="headline pagination-centered">
+          <img class="img-circle main-img" src="http://ulyssecarion.com/assets/img/ulysse_lookin_good.png">
+        </div>
+        <h1 class="depth" title="Ulysse Carion">Ulysse Carion</h1>
+        <p class="lead">Artist, creator, and hacker extraordinaire.</p>
+
+        <ul class="social">
+          <li><a href="https://github.com/ulyssecarion"><i class="icon-github"></i><p>GitHub</p></a></li>
+          <li><a href="https://rubygems.org/profiles/ulyssecarion"><i class="icon-code"></i><p>RubyGems</p></a></li>
+          <li><a href="mailto:ulyssecarion@gmail.com"><i class="icon-envelope"></i><p>Email</p></a></li>
+          <li><a href="http://ulyssecarion.com/cv.pdf"><i class="icon-file"></i><p>R&eacute;sum&eacute;</p></a></li>
+        </ul>
+    </section>
+    <section class="section-hi">
+      <div class="column">
+        <h2>About me</h2>
+        <p>Currently a Junior at La Jolla High School, I started programming about a year ago and I haven't been able to stop since. I started off learning Java for AP Computer Science, but I quickly picked up Ruby (and Rails), and I've been continuing to expand my horizons ever since. What's most important to me is to always be learning something new.</p>
+        <p>Right now, I'm really interested in web design, mobile development, and 3D graphics with OpenGL.</p>
+        <p>If you want a taste of some of the stuff I do, you should took a look at <a href="cv.pdf">my resume</a> or check me out on <a href="https://github.com/ulyssecarion">GitHub</a>. The rest of this page is dedicated to showcasing a few of my side projects I've built recently. All of them are open-source and are available on Github.</p>
+      </div>
+    </section>
+    <section class="section-chess">
+      <div class="column">
+        <h2>Godot</h2>
+        <p>Chess engines have always fascinated me. During the summer of 2012 I decided I would try my hand at making my own chess program. The result is the lovingly-named <a href="http://ulyssecarion.com/godot.html"><i>Godot</i></a>.</p>
+        <p>Despite the fact that I'm an awful chess player, Godot turned out to be quite good, far exceeding my expectations. Using some of the techniques employed by the best engines out there, Godot plays a pretty serious game of chess. At one minute chess, it will defeat <b>99.89%</b> of humans.</p>
+        <p>I even made a <a href="http://docs.seleniumhq.org/projects/webdriver/">Selenium Webdriver</a> program that connects Godot to players online. Godot reached an impressive 2242 Elo rating online, and along the way defeated a few titled players, including many FIDE-titled <a href="http://en.wikipedia.org/wiki/FIDE_titles#FIDE_Master_.28FM.29">CMs</a>, <a href="http://en.wikipedia.org/wiki/FIDE_titles#FIDE_Master_.28FM.29">FMs</a>, and <a href="http://en.wikipedia.org/wiki/FIDE_titles#Woman_Grandmaster_.28WGM.29">WGMs</a>.</p>
+
+        <p>I recently entered Godot into the local science fair and I got pretty far, receiving an honorable mention at the California state science fair. I wrote <a href="http://ulyssecarion.com/ComputerChess.pdf">a pretty paper</a> in LaTeX about the program. You can follow the link below for a complete rundown on Godot.</p>
+      </div>
+      <a class="call-to-arms" href="http://ulyssecarion.com/godot.html">Learn more <i class="icon-double-angle-right"></i></a>
+    </section>
+    <section class="section-turk">
+      <div class="column">
+        <h2>The Musical Turk</h2>
+        <p>Inspired by Animusic's Pipe Dream, the Musical Turk is a WebGL MIDI visualization experiment. It throws marbles that strike notes in sync with music. The result? A pretty awesome 3D interactive experience, right in your browser.</p>
+        <p>The Musical Turk is in Javascript and relies on <a href="http://threejs.org">three.js</a> for visuals and <a href="http://mudcu.be/midi-js/">midi.js</a> for in-browser MIDI playing. One of my favorite parts about Turk is that it adapts to lag from slow internet connection or delays when rendering or playing music, dynamically speeding up or slowing down to have very precise synchronization between the marbles and the sound. Try it for yourself; it's pretty cool.</p>
+        <p>Note: The Musical Turk only works in Chrome; no other browser can play MIDI right. Sorry about that.</p>
+      </div>
+      <a class="call-to-arms" href="http://ulyssecarion.github.io/turk">See it in action <i class="icon-double-angle-right"></i></a>
+    </section>
+    <section class="section-inter">
+      <div class="column">
+        <h2>Interlingua</h2>
+        <p>Imagine if you will: a programming language whose keywords are pre-defined by the user for whatever his needs. That's, in essence, what Interlingua is.</p>
+        <p>I made Interlingua because it had always bothered me that people learning computer science from the non-English-speaking world had to make an awkward compromise between having English-language keywords and native-language variables. I thought Interlingua would be a cute way of trying to fix that. I also used it to make my own flavor of <a href="http://en.wikipedia.com/wiki/LOLCODE">LOLCODE</a>.</p>
+        <p>I made Interlingua from scratch, and given that it's pretty good. I wrote the lexer, interpreter, and runtime in Ruby; the parser I wrote in <a href="https://github.com/tenderlove/racc">RACC</a>. Interlingua has basic object orientation, method overriding, <a href="http://en.wikipedia.org/wiki/Monkey_patch">monkey patching</a>, and Python-style indentation. I'm pretty proud of it.</p>
+      </div>
+      <a class="call-to-arms" href="https://github.com/ulyssecarion/interlingua">Check it out <i class="icon-double-angle-right"></i></a>
+    </section>
+    <section class="section-footer">
+      <div class="column">
+        Made by Ulysse using <a href="http://twitter.github.io/bootstrap/">Bootstrap</a>, <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>, and <a href="http://designmodo.github.io/Flat-UI/">Flat-UI</a>. <i class="icon-heart"></i>
+      </div>
+    </section>
+  </body>
+</html>
