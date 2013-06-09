@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Vr&uuml;tty</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Font awesome. -->
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="../assets/css/flat-ui.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Fanwood+Text' rel='stylesheet' type='text/css'>
+
+    <style>
+      * {
+        text-align: center;
+      }
+
+      h1, h2 {
+        font-family: 'Fanwood Text', serif;
+        text-align: center;
+      }
+
+      section {
+        padding-top: 40px;
+        padding-bottom: 70px;
+      }
+
+      .section-main {
+        padding-top: 140px;
+        padding-bottom: 100px;
+      }
+
+      .section-main h1 {
+        font-size: 130px;
+      }
+
+      .section-main h2 {
+        margin-top: 50px;
+      }
+
+      #main-btn {
+        margin-top: 60px;
+      }
+
+      .section-who {
+        color: #FCFFFF;
+        background-color: #DF6246;
+      }
+
+      .section-work {
+        color: #FCFFFF;
+        background-color: #C15B45;
+        padding-bottom: 100px;
+      }
+
+      #myCarousel {
+        width: 700px;
+        height: 400px;
+        margin: auto;
+      }
+
+      #myCarousel a {
+        text-decoration: none;
+      }
+
+      .carousel-control.right {
+        left: auto;
+        right: -50px;
+      }
+
+      .carousel-control.left {
+        left: -50px;
+        right: auto;
+      }
+
+      .carousel-caption {
+        position: relative;
+        background: none;
+      }
+
+      footer {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #50545F;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="section-main">
+      <h1>Vr&uuml;tty</h1>
+      <h2><i>n.</i>&mdash;a bunch of dudes who like telling stories and shooting films.</h2>
+      <a id="main-btn" class="btn" href="#">Learn more &raquo;</a>
+    </section>
+    <section class="section-who">
+      <div class="container">
+        <h1>Who we are</h1>
+        <div class="row">
+          <div class="span4 offset1">
+            <h2>John Doe</h2>
+            <img src="http://placebear.com/140/140" class="img-circle pagination-centered">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+          </div>
+          <div class="span4 offset2">
+            <h2>Jane Roe</h2>
+            <img src="http://placebear.com/140/140" class="img-circle pagination-centered">
+            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-work">
+      <div class="container">
+        <h1>Our Work</h1>
+        <div id="myCarousel" class="carousel slide">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="http://placebear.com/700/400">
+              <div class="carousel-caption">
+                <h4>First Thumbnail label</h4>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="http://placebear.com/700/400">
+              <div class="carousel-caption">
+                <h4>Second Thumbnail label</h4>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="http://placebear.com/700/400">
+              <div class="carousel-caption">
+                <h4>Third Thumbnail label</h4>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              </div>
+            </div>
+          </div>
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">&laquo;</a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">&raquo;</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        Footer text goes here...
+      </div>
+    </footer>
+
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
