@@ -180,5 +180,26 @@
 
     <script src="../assets/js/jquery.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('#myCarousel').carousel({
+          interval: 5000
+        })
+
+        $('a[href^="#"]').on('click',function (e) {          
+          console.log(e);
+          if (e.target.hash !== '#myCarousel') {
+            e.preventDefault();
+            var target = this.hash,
+            $target = $(target);
+            $('html, body').stop().animate({
+              'scrollTop': $target.offset().top
+            }, 900, 'swing', function () {
+              window.location.hash = target;
+            });
+          }
+        });
+      });
+    </script>
   </body>
 </html>
