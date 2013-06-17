@@ -34,14 +34,23 @@
       .section-main {
         padding-top: 180px;
         padding-bottom: 100px;
+
+        background-image: url(../assets/img/vrutty-small.png);
+        background-position: right bottom;
+        background-repeat: no-repeat;
       }
 
       .section-main h1 {
         font-size: 130px;
       }
 
+      .subtitle-column {
+        margin: 0px auto;
+        max-width: 800px;
+      }
+
       .umlaut {
-        padding-left: 4px;
+        padding-left: 7px;
         color: #DF6246;
       }
 
@@ -55,12 +64,27 @@
 
       .section-who {
         color: #FCFFFF;
-        background-color: #DF6246;
+        background-color: #AF523D;
+      }
+
+      .section-who img {
+        width: 180px;
+        height: 180px;
+        padding-bottom: 10px;
+      }
+
+      .section-about {
+        color: #FCFFFF;
+        background-color: #C15B45;
+      }
+
+      .section-about img {
+        padding-bottom: 10px;
       }
 
       .section-work {
         color: #FCFFFF;
-        background-color: #C15B45;
+        background-color: #DF6246;
       }
 
       #myCarousel {
@@ -99,25 +123,10 @@
   <body>
     <section class="section-main">
       <h1>Vr<span class="umlaut">&uuml;</span>tty</h1>
-      <h2><i>n.</i>&mdash;a bunch of dudes who like telling stories and shooting films.</h2>
-      <a id="main-btn" class="btn" href="#who">Learn more &raquo;</a>
-    </section>
-    <section class="section-who" id="who">
-      <div class="container">
-        <h1>Who we are</h1>
-        <div class="row">
-          <div class="span4 offset1">
-            <h2>Adam Hersko-RonaTas</h2>
-            <img src="http://placebear.com/140/140" class="img-circle pagination-centered">
-            <p>Student at La Jolla High.</p>
-          </div>
-          <div class="span4 offset2">
-            <h2>Darian Spencer</h2>
-            <img src="http://placebear.com/140/140" class="img-circle pagination-centered">
-            <p>San Diego High School alumnus and student at University of Colorado Boulder.</p>
-          </div>
-        </div>
+      <div class="subtitle-column">
+        <h2>\vr&uuml;-ty'\ <i>n.</i> 1. Hungarian onomatopoeic represention of a record scratching. 2. two guys who have a passion for film.</h2>
       </div>
+      <a id="main-btn" class="btn" href="#who">Learn more &raquo;</a>
     </section>
     <section class="section-work">
       <div class="container">
@@ -169,6 +178,31 @@
           </div>
           <a class="left carousel-control" href="#myCarousel" data-slide="prev">&laquo;</a>
           <a class="right carousel-control" href="#myCarousel" data-slide="next">&raquo;</a>
+        </div>
+      </div>
+    </section>
+    <section class="section-about">
+      <div class="container">
+        <h1>About Us</h1>
+        <img src="../assets/img/adam_darian.jpg" />
+        <p>Ever since they first used Adam’s mother’s camcorder to shoot a poorly budgeted Spaghetti Western, Adam and Darian have teamed up to do what they love: making videos. While attending different high schools across the city, they would come together on weekends and make short films, both comedic and serious, to satisfy their thirst for filmmaking.</p>
+        <p>Over the past years, they’ve worked for the National Energy Foundation on educational films shown to students around the country. They have made commercials for Casio. They have directed a short film for the National Institute of Health as part of a grant to increase organ donation. They have won awards both statewide and nationally for suicide awareness and energy consciousness. But when it comes down to it, they just enjoy being on all sides of the camera to make their visions, no matter how dark or silly, a reality.</p>
+      </div>
+    </section>
+    <section class="section-who" id="who">
+      <div class="container">
+        <h1>Who we are</h1>
+        <div class="row">
+          <div class="span4 offset1">
+            <h2>Adam Hersko-RonaTas</h2>
+            <img src="../assets/img/adam.jpg" class="pagination-centered">
+            <p>Born in San Diego, CA, Adam was raised in the lovely neighborhood of North Park. He is currently a senior at La Jolla High School where he is the commissioner for video in the Associated Student Body. He is fluent in both English and Hungarian. His sports of choice: waterpolo and swim team. He has worked with videos since age 10 and has grown to appreciate it more each year.</p>
+          </div>
+          <div class="span4 offset2">
+            <h2>Darian Spencer</h2>
+            <img src="../assets/img/darian.jpg" class="pagination-centered">
+            <p>Darian has been interested in film since age 11. He attended San Diego High School of International studies where he received the IB diploma and participated in the IB film course. He is fluent in English and German. In 2010 he attended a high school in Frankfurt for three months. His hobbies include swimming, drawing, biking, and drumming. He will be attending the University of Colorado Boulder.</p>
+          </div>
         </div>
       </div>
     </section>
