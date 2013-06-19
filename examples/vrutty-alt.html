@@ -35,10 +35,10 @@
         padding-top: 180px;
         padding-bottom: 100px;
 
-        background-image: url(../assets/img/vrutty-small.png);
+        /*background-image: url(../assets/img/vrutty-small.png);
         background-position: right bottom;
         background-repeat: no-repeat;
-        background-size: 300px;
+        background-size: 300px;*/
       }
 
       .section-main h1 {
@@ -61,6 +61,13 @@
 
       #main-btn {
         margin-top: 60px;
+        margin-bottom: 20px;
+      }
+
+      #side-img {
+        position: relative;
+        top: -50px;
+        width: 100%;
       }
 
       .section-who {
@@ -124,13 +131,21 @@
   </head>
   <body>
     <section class="section-main">
-      <h1>Vr<span class="umlaut">&uuml;</span>tty</h1>
-      <div class="subtitle-column">
-        <h2>\vr&uuml;-ty'\ <i>n.</i> 1. Hungarian onomatopoeic represention of a record scratching. 2. two guys who have a passion for film.</h2>
+      <div class="row-fluid">
+        <div class="span6 offset1">
+          <h1>Vr<span class="umlaut">&uuml;</span>tty</h1>
+          <div class="subtitle-column">
+            <h2>\vr&uuml;-ty'\ <i>n.</i> 1. Hungarian onomatopoeic represention of a record scratching. 2. two guys with a passion for film.</h2>
+          </div>
+          <a id="main-btn" class="btn" href="#what-we-do">Learn more &raquo;</a>
+          <p>About us &mdash; Who we are &mdash; In the news</p>
+        </div>
+        <div class="span5">
+          <img src="../assets/img/vrutty-small.png" id="side-img" />
+        </div>
       </div>
-      <a id="main-btn" class="btn" href="#who">Learn more &raquo;</a>
     </section>
-    <section class="section-work">
+    <section class="section-work" id="what-we-do">
       <div class="container">
         <h1>Our Work</h1>
         <div id="myCarousel" class="carousel slide">
@@ -186,7 +201,7 @@
     <section class="section-about">
       <div class="container">
         <h1>About Us</h1>
-        <img src="../assets/img/pair_cropped.png" />
+        <img src="../assets/img/adam_darian.jpg" />
         <p>Ever since they first used Adam’s mother’s camcorder to shoot a poorly budgeted Spaghetti Western, Adam and Darian have teamed up to do what they love: making videos. While attending different high schools across the city, they would come together on weekends and make short films, both comedic and serious, to satisfy their thirst for filmmaking.</p>
         <p>Over the past years, they’ve worked for the National Energy Foundation on educational films shown to students around the country. They have made commercials for Casio. They have directed a short film for the National Institute of Health as part of a grant to increase organ donation. They have won awards both statewide and nationally for suicide awareness and energy consciousness. But when it comes down to it, they just enjoy being on all sides of the camera to make their visions, no matter how dark or silly, a reality.</p>
       </div>
