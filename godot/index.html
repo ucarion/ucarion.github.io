@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ulysse</title>
+  <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+
+  <style type="text/css">
+    body {
+      margin-top: 60px;
+    }
+
+    #main-image {
+      margin-top: -135px;
+      margin-left: -105px;
+      height: 270px;
+      width: 325px;
+      max-width: 1000%; /* override bootstrap's max-width */
+    }
+    .bignum {
+      font-size: x-large;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 7px;
+    }
+  </style>
+  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+  <a href="https://github.com/ulyssecarion/godot"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+  <div class="container">
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-md-3">
+          <img id="main-image" src="/assets/godot-logo-square.png">
+        </div>
+        <div class="col-md-9">
+          <h1>Meet <i>Godot</i>:</h1>
+          <div class="row-fluid">
+            <div class="offset1">
+              <h2><small>An open-source Java chess engine.</small></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>As part of a summer project, I made a program that can play a very respectable game of chess. It uses many of the techniques used by modern top-of-the-line chess engines to quickly and accurately find the best moves available.</p>
+      <p>GodotBot, the online version of Godot, can defeat almost any human at fast-paced 1-minute chess.</p>
+    </div>
+
+    <h1>What's in a name?</h1>
+    <p>The name "Godot" (pronounced "Goh-DOH", as in "<i>go</i> make me some <i>dough</i>") is a reference to an absurdist play by Samuel Beckett called <a href="http://en.wikipedia.org/wiki/Waiting_for_Godot"><i>En Attendant Godot</i></a> (English: <i>Waiting for Godot</i>). It's about two guys who wait around indefinitely for a man named Godot. The early versions of Godot would take a very, very long time to search through positions (this was before I read up on how the pros do it), so I would often find myself waiting for Godot, whence the name.</p>
+
+    <hr />
+
+    <h1>How does it work?</h1>
+    <div class="row">
+      <div class="col-md-6 well">
+        <h3 style="text-align:center;">For non-technical people:</h3>
+        <p>The main goal of a chess engine is to find the best move possible in a given position. Godot finds moves by testing out thousands of sequences of moves, finally choosing the one it predicts will be the best.</p>
+        <p>A problem with this technique is that it takes a lot of time to search through so many positions; from the starting position, searching just three moves ahead would require examining 100 million positions! There are two major solutions to this issue: faster searching and smarter searching.</p>
+        <p><i>Faster searching.</i> Computers are fastest when using what is called bitwise operations, which tell the computer to manipulate 1s and 0s directly. Programs such as Godot rely on representing chess mostly using these operations, making them what is called <i>bitboard</i> programs.</p>
+        <p><i>Smarter searching.</i> There are tons of ways to avoid searching positions needlessly. Some of these are well-known rigorous techniques in computer science, such as <a href="http://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning">&alpha;-&beta; pruning</a>. Others, such as <a href="http://chessprogramming.wikispaces.com/Null+Move+Pruning">null-move pruning</a>, are clever techniques that try to figure out when positions don't need to be searched.</p>
+      </div>
+      <div class="col-md-6 well">
+        <h3 style="text-align:center;">For technical people:</h3>
+        <p>Godot is a bitboard-based program and uses magic bitboards for sliding piece move generation.</p>
+        <p>Godot searches using alpha-beta pruning with iterative deepening, prioritizing PVS then using history heuristics. Godot uses quiescent searching and static exchange evaluation after reaching horizon nodes. Godot uses null-move pruning with <i>R</i> = 3, avoiding <i>zugzwang</i> by only doing a null move if there is at least a minor piece on the board.</p>
+        <p>For threefold repetition detection and the self-made opening database, Godot uses Zobrist hashes. The opening database has about 250,000 entries, which accounts for most realistic positions until move 7.</p>
+        <p>Evaluation is based on material, pawn structure (including rooks defending pawns), piece-square tables, and king safety.</p>
+      </div>
+    </div>
+    <p>You can find my science fair report on Godot, which has lots of detail and pretty images, <a href="/ComputerChess.pdf">here</a>.</p>
+
+    <hr />
+
+    <h1>How well does it work?</h1>
+    <p>Short answer: pretty darn well. Let's have a look at the numbers.</p>
+    <div class="row" style="text-align:center;">
+      <div class="col-md-3 well">
+        <div class="bignum">
+          2.4 million
+        </div>
+        Number of legal chess positions Godot can loop through in a second.
+      </div>
+      <div class="col-md-3 well">
+        <div class="bignum">
+          33.9 thousand
+        </div>
+        Number of evaluations Godot can do per second while searching.
+      </div>
+      <div class="col-md-3 well">
+        <div class="bignum">
+          2242
+        </div>
+        Godot's elo rating on chess.com.<br />&nbsp;
+      </div>
+      <div class="col-md-3 well">
+        <div class="bignum">
+          99.89%
+        </div>
+        Percentage of chess-playing humans Godot can beat at 1-minute chess.
+      </div>
+    </div>
+
+    <hr />
+
+    <h1>GodotBot</h1>
+    <p>In order to test how well Godot played, I created GodotBot, a simple program that connects Godot to chess.com. Using Selenium Webdriver, a tool for simulating a web browser, GodotBot connects to chess.com and plays games against humans online, using Godot to do the actual thinking. After letting GodotBot play for a couple of hours over the span of a few days, GodotBot's elo ranking is around 2200+. GodotBot has defeated a few respected players on chess.com, including many FIDE-titled <a href="http://en.wikipedia.org/wiki/FIDE_titles#FIDE_Master_.28FM.29">CMs</a>, <a href="http://en.wikipedia.org/wiki/FIDE_titles#FIDE_Master_.28FM.29">FMs</a>, and even <a href="http://en.wikipedia.org/wiki/FIDE_titles#Woman_Grandmaster_.28WGM.29">WGMs</a>.</p>
+    <p>You can find the source code for GodotBot on github <a href="https://github.com/ulyssecarion/godot/blob/master/src/bot/GodotBot.java">here</a>.</p>
+
+    <hr />
+
+    <footer class="footer">
+      <p>By Ulysse &mdash; Made with Bootstrap.</p>
+    </footer>
+  </div>
+</body>
