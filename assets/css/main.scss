@@ -1,115 +1,16 @@
 @import 'bourbon/bourbon';
 @import 'bootstrap.min.css';
+@import 'typography.css';
 
-$color1: #4284bc;
-$color2: #679dca;
-$color3: #8cb5d8;
-$color4: #cbcbcb;
-$color5: #e5e5e5;
-
-// $backgroundColor: #70B5DB;
-$backgroundColor: $color3;
-// $columnBackgroundColor: #FDF6E3;
-$columnBackgroundColor: #FFF6E0;
-
-$padTop: 15px;
-$padLeft: 35px;
-
-$headerMarginBelow: 25px;
-$headerSmallTextSize: 19px;
-
-$headerSidetextColor: #474747;
-
-$bodyCornerRadius: 5px;
-
-@mixin brandFont {
-  font-family: 'Lobster', Georgia, Times, serif;
+* {
+  font-family: 'charterregular' !important;
 }
-
-@mixin padContent($onlyPadLeft: false) {
-  @if $onlyPadLeft {
-    padding-left: $padLeft;
-  } @else {
-    padding: $padTop $padLeft;
-  }
-}
-
-@mixin darkLink {
-  a {
-  color: #0E4A7E;
-
-  &:hover {
-    color: #333;
-  }
-  }
-}
-
-body {
-  background-color: $backgroundColor;
-}
-
-h1, h2, h3, li, p, footer {
-  font-family: 'Open Sans', sans-serif;
-}
-
-p, li {
-  font-size: 18px;
-}
-
-code, pre {
-  font-size: 15px;
-}
-
-// Override boostrap code styles
-code {
-  color: #E85100;
-}
-
-.header {
-  margin-bottom: $headerMarginBelow;
-
-  small {
-    font-size: $headerSmallTextSize;
-    color: $headerSidetextColor;
-  }
-
-  @include darkLink;
-}
-
-$brandColor: #333;
-$brandHoverColor: #EEE;
 
 #brand {
-  @include brandFont;
-  @include padContent(true);
-
-  color: $brandColor;
-
-  &:hover {
-    color: $brandHoverColor;
-    text-decoration: none;
-  }
+  font-size: 46px;
 }
 
-#content {
-  @include padContent;
-
-  background-color: $columnBackgroundColor;
-  border-radius: $bodyCornerRadius;
-
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
-}
-
-footer {
-  @include padContent;
-  @include darkLink;
-}
-
-ul.post-list {
-  .post-summary {
-    span {
-      font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-      color: #555;
-    }
-  }
+.post p, .post-summary {
+  font-size: 26px;
+  margin-bottom: 20px;
 }
