@@ -1,50 +1,11 @@
 @import url(bootstrap.min.css);
-body {
-  background-color: #8cb5d8; }
-
-h1, h2, h3, li, p, footer {
-  font-family: 'Open Sans', sans-serif; }
-
-p, li {
-  font-size: 18px; }
-
-code, pre {
-  font-size: 15px; }
-
-code {
-  color: #E85100; }
-
-.header {
-  margin-bottom: 25px; }
-  .header small {
-    font-size: 19px;
-    color: #474747; }
-  .header a {
-    color: #0E4A7E; }
-    .header a:hover {
-      color: #333; }
+@import url(typography.css);
+* {
+  font-family: 'charterregular' !important; }
 
 #brand {
-  font-family: 'Lobster', Georgia, Times, serif;
-  padding-left: 35px;
-  color: #333333; }
-  #brand:hover {
-    color: #eeeeee;
-    text-decoration: none; }
+  font-size: 46px; }
 
-#content {
-  padding: 15px 35px;
-  background-color: #fff6e0;
-  border-radius: 5px;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2); }
-
-footer {
-  padding: 15px 35px; }
-  footer a {
-    color: #0E4A7E; }
-    footer a:hover {
-      color: #333; }
-
-ul.post-list .post-summary span {
-  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-  color: #555; }
+.post p, .post-summary {
+  font-size: 26px;
+  margin-bottom: 20px; }

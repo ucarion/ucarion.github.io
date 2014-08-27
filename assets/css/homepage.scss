@@ -1,40 +1,62 @@
-// Ugly hack for Bootstrap 3.
-.row {
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
 body {
-  background-color: #349FDB;
+  background-color: #111;
 }
 
-#main-content {
-  margin-top: 135px;
+#big-header-container {
+  text-align: center;
+  margin-top: 10%;
 
-  h1, h2 {
-    font-family: "Lato", sans-serif;
+  font-family: 'Abril Fatface', cursive;
+  color: #EEE;
+
+  #big-header {
+    font-size: 110px;
+    letter-spacing: 1px;
+  }
+
+  #separator {
+    width: 60%;
+  }
+
+  #big-caption {
+    font-family: 'Cardo', serif;
+
+    font-size: 40px;
+  }
+
+  #spacer {
+    margin-top: 1%;
+  }
+
+  #small-caption {
+    font-family: 'Cardo', serif;
+
+    font-size: 25px;
   }
 }
 
-#big-hello {
-  font-size: 70px;
-}
+#contacts {
+  $contact-gray: #BBB;
 
-#social-icons {
-  margin-top: 30px;
+  margin-top: 7%;
+  width: 40%;
+
   text-align: center;
 
+  .contact-icon {
+    font-size: 600%;
+  }
+
   a {
-    color: #34495E;
+    color: $contact-gray;
     text-decoration: none;
-    font-size: 20px;
 
     &:hover {
-      color: #FFF;
+      color: #EEE;
     }
+  }
 
-    i {
-      font-size: 60px;
-    }
+  .contact-subtitle {
+    font-size: 25px;
   }
 }

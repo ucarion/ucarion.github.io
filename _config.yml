@@ -1,4 +1,4 @@
 name: Ulysse's Blog
 blog_url: /blog/
 markdown: redcarpet
-pygments: true
+highlighter: pygments

@@ -1,169 +1,62 @@
-// This stylesheet is strictly for the homepage, because I initially wrote that
-// page without any concern about re-using CSS.
-// 
-// Perhaps someday, I should find a way to have less redundancy between this
-// file and main.scss?
-
-@media (max-width: 650px) {
-  .main-img {
-    width: 180px;
-  }
-
-  .section-intro h1 {
-    font-size: 45px;
-    margin-bottom: 20px;
-  }
-
-  .lead {
-    font-size: 18px;
-    margin-bottom: 0px;
-  }
-
-  ul.social li {
-    margin-right: 10px;
-    font-size: 28px;
-  }
-
-  .column {
-    max-width: 300px;
-  }
-
-  .headline {
-    margin-top: -15px;
-    margin-bottom: 15px;
-  }
+body {
+  background-color: #111;
 }
 
-@media (min-width: 650px) {
-  .main-img {
-    width: 250px;
-  }
-
-  .section-intro h1 {
-    font-size: 72px;
-    margin-bottom: 33px;
-  }
-
-  .lead {
-    font-size: 28px;
-  }
-
-  ul.social li {
-    margin-right: 25px;
-  }
-
-  .column {
-    max-width: 600px;
-  }
-
-  .headline {
-    margin-top: 0px;
-    margin-bottom: 55px;
-  }
-}
-
-p {
-  font-size: 16px;
-}
-
-a {
-  text-decoration: none;
-}
-
-h1 {
-  font-family: 'Lobster', Georgia, Times, serif;
-}
-
-h2 {
-  font-family: "Lato", sans-serif;
-
-  color: white;
+#big-header-container {
   text-align: center;
+  margin-top: 10%;
+
+  font-family: 'Abril Fatface', cursive;
+  color: #EEE;
+
+  #big-header {
+    font-size: 110px;
+    letter-spacing: 1px;
+  }
+
+  #separator {
+    width: 60%;
+  }
+
+  #big-caption {
+    font-family: 'Cardo', serif;
+
+    font-size: 40px;
+  }
+
+  #spacer {
+    margin-top: 1%;
+  }
+
+  #small-caption {
+    font-family: 'Cardo', serif;
+
+    font-size: 25px;
+  }
 }
 
-.column {
-  margin: 0px auto;
-}
+#contacts {
+  $contact-gray: #BBB;
 
-ul.social {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  margin-top: 7%;
+  width: 40%;
+
   text-align: center;
 
-  li {
-    padding: 0;
-    display: inline-block;
-    margin-top: 20px;
-    vertical-align: top;
-    font-size: 32px;
-
-    a {
-      color: #105A77;
-
-      p {
-        margin-top: 20px;
-      }
-    }
-
-    &:hover, a:hover {
-      color: white;
-    }
+  .contact-icon {
+    font-size: 600%;
   }
-}
-
-.call-to-arms {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 16px;
-  display: block;
-}
-
-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  min-width: 100%;
-}
-
-// This guy's a little different ...
-.section-intro {
-  padding-top: 30px;
-  background-color: #349FDB;
-  text-align: center;
-  color: #065A77;
-}
-
-@mixin section($backgroundColor, $textColor, $linkColor, $h2Color: false) {
-  background-color: $backgroundColor;
-  color: $textColor;
 
   a {
-    color: $linkColor;
-  }
+    color: $contact-gray;
+    text-decoration: none;
 
-  @if $h2Color {
-    h2 {
-      color: $h2Color;
+    &:hover {
+      color: #EEE;
     }
   }
-}
 
-.section-hi {
-  @include section(#7ec9ac, #357f63, #b1f6db);
-}
-
-.section-turk {
-  @include section(#e06d5e, #fbdcd8, #fbbeb6);
-}
-
-.section-inter {
-  @include section(#f3f3e9, #a7a9ac, #848991, #555);
-}
-
-.section-chess {
-  @include section(#fcead5, #7f6c55, #ad6c29, #675743);
-}
-
-.section-footer {
-  @include section(#282a2b, #7a7a7a, #B4B4B4);
+  .contact-subtitle {
+    font-size: 25px;
+  }
 }

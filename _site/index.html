@@ -3,19 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Ulysse</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Loading Bootstrap -->
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/flat-ui.css" rel="stylesheet">
 
     <!-- Font awesome. -->
     <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- Loading Flat UI -->
-    <link href="/assets/css/flat-ui.css" rel="stylesheet">
-
-    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
@@ -25,61 +21,55 @@
     <link rel="stylesheet" href="/assets/css/homepage.css">
   </head>
   <body>
-    <section class="section-intro">
-        <div class="headline pagination-centered">
-          <img class="img-circle main-img" src="assets/ulysse.png">
+    <div id="big-header-container">
+      <span id="big-header">
+        Ulysse Carion
+      </span>
+
+      <hr id="separator">
+
+      <span id="big-caption">
+        Hacker &amp; Artist Extraordinaire
+      </span>
+
+      <!-- Spacer -->
+      <div id="spacer"></div>
+
+      <span id="small-caption">
+        UC Berkeley &#8216;18
+      </span>
+    </div>
+
+    <div class="container" id="contacts">
+      <div class="row">
+        <div class="col-md-4">
+          <a href="https://github.com/ucarion">
+            <i class="fa icon-github contact-icon"></i>
+
+            <div class="contact-subtitle">
+              GitHub
+            </div>
+          </a>
         </div>
-        <h1 class="depth" title="Ulysse Carion">Ulysse Carion</h1>
-        <p class="lead">Artist, creator, and hacker extraordinaire.</p>
 
-        <ul class="social">
-          <li><a href="https://github.com/ulyssecarion"><i class="icon-github"></i><p>GitHub</p></a></li>
-          <li><a href="https://rubygems.org/profiles/ulyssecarion"><i class="icon-code"></i><p>RubyGems</p></a></li>
-          <li><a href="mailto:ulyssecarion@gmail.com"><i class="icon-envelope"></i><p>Email</p></a></li>
-          <li><a href="cv.pdf"><i class="icon-file"></i><p>R&eacute;sum&eacute;</p></a></li>
-        </ul>
-    </section>
-    <section class="section-hi">
-      <div class="column">
-        <h2>About me</h2>
-        <p>Currently a Senior at La Jolla High School, I started programming about two years ago and I haven't been able to stop since. I started off learning Java for AP Computer Science, but I quickly picked up Ruby (and Rails), and I've been continuing to expand my horizons ever since. What's most important to me is to always be learning something new.</p>
-        <p>Right now, I'm really interested in web design, mobile development, and 3D graphics with OpenGL.</p>
-        <p>If you want a taste of some of the stuff I do, you should took a look at <a href="cv.pdf">my resume</a> or check me out on <a href="https://github.com/ulyssecarion">GitHub</a>. The rest of this page is dedicated to showcasing a few of my side projects I've built recently. All of them are open-source and are available on Github.</p>
-      </div>
-    </section>
-    <section class="section-chess">
-      <div class="column">
-        <h2>Godot</h2>
-        <p>Chess engines have always fascinated me. During the summer of 2012 I decided I would try my hand at making my own chess program. The result is the lovingly-named <a href="/godot"><i>Godot</i></a>.</p>
-        <p>Despite the fact that I'm an awful chess player, Godot turned out to be quite good, far exceeding my expectations. Using some of the techniques employed by the best engines out there, Godot plays a pretty serious game of chess. At one minute chess, it will defeat <b>99.89%</b> of humans.</p>
-        <p>I even made a <a href="http://docs.seleniumhq.org/projects/webdriver/">Selenium Webdriver</a> program that connects Godot to players online. Godot reached an impressive 2242 Elo rating online, and along the way defeated a few titled players, including many FIDE-titled <a href="http://en.wikipedia.org/wiki/FIDE_titles#FIDE_Master_.28FM.29">CMs</a>, <a href="http://en.wikipedia.org/wiki/FIDE_titles#FIDE_Master_.28FM.29">FMs</a>, and <a href="http://en.wikipedia.org/wiki/FIDE_titles#Woman_Grandmaster_.28WGM.29">WGMs</a>.</p>
+        <div class="col-md-4">
+          <a href="/cv.pdf">
+            <i class="fa icon-file contact-icon"></i>
 
-        <p>I recently entered Godot into the local science fair and I got pretty far, receiving an honorable mention at the California state science fair. I wrote <a href="ComputerChess.pdf">a pretty paper</a> in LaTeX about the program. You can follow the link below for a complete rundown on Godot.</p>
+            <div class="contact-subtitle">
+              R&eacute;sum&eacute;
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="mailto:ulysse@ulysse.io">
+            <i class="fa icon-envelope contact-icon"></i>
+
+            <div class="contact-subtitle">Email</div>
+          </a>
+        </div>
       </div>
-      <a class="call-to-arms" href="/godot">Learn more <i class="icon-double-angle-right"></i></a>
-    </section>
-    <section class="section-turk">
-      <div class="column">
-        <h2>The Musical Turk</h2>
-        <p>Inspired by Animusic's Pipe Dream, the Musical Turk is a WebGL MIDI visualization experiment. It throws marbles that strike notes in sync with music. The result? A pretty awesome 3D interactive experience, right in your browser.</p>
-        <p>The Musical Turk is in Javascript and relies on <a href="http://threejs.org">three.js</a> for visuals and <a href="http://mudcu.be/midi-js/">midi.js</a> for in-browser MIDI playing. One of my favorite parts about Turk is that it adapts to lag from slow internet connection or delays when rendering or playing music, dynamically speeding up or slowing down to have very precise synchronization between the marbles and the sound. Try it for yourself; it's pretty cool.</p>
-        <p>Note: The Musical Turk only works in Chrome; no other browser can play MIDI right. Sorry about that.</p>
-      </div>
-      <a class="call-to-arms" href="http://ulyssecarion.github.io/turk">See it in action <i class="icon-double-angle-right"></i></a>
-    </section>
-    <section class="section-inter">
-      <div class="column">
-        <h2>Interlingua</h2>
-        <p>Imagine if you will: a programming language whose keywords are pre-defined by the user for whatever his needs. That's, in essence, what Interlingua is.</p>
-        <p>I made Interlingua because it had always bothered me that people learning computer science from the non-English-speaking world had to make an awkward compromise between having English-language keywords and native-language variables. I thought Interlingua would be a cute way of trying to fix that. I also used it to make my own flavor of <a href="http://en.wikipedia.com/wiki/LOLCODE">LOLCODE</a>.</p>
-        <p>I made Interlingua from scratch, and given that it's pretty good. I wrote the lexer, interpreter, and runtime in Ruby; the parser I wrote in <a href="https://github.com/tenderlove/racc">RACC</a>. Interlingua has basic object orientation, method overriding, <a href="http://en.wikipedia.org/wiki/Monkey_patch">monkey patching</a>, and Python-style indentation. I'm pretty proud of it.</p>
-      </div>
-      <a class="call-to-arms" href="https://github.com/ulyssecarion/interlingua">Check it out <i class="icon-double-angle-right"></i></a>
-    </section>
-    <section class="section-footer">
-      <div class="column">
-        Made by Ulysse using <a href="http://twitter.github.io/bootstrap/">Bootstrap</a>, <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>, and <a href="http://designmodo.github.io/Flat-UI/">Flat-UI</a>. <i class="icon-heart"></i>
-      </div>
-    </section>
+    </div>
   </body>
 </html>
