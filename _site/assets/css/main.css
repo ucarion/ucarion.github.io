@@ -1,9 +1,28 @@
 @import url(bootstrap.min.css);
-#content p {
+h1, h2, h3, h4, h5, h6, * {
+  font-family: 'Computer Modern Serif'; }
+
+h3, h4, h5, h6 {
+  font-weight: bold; }
+
+.post-list .post-summary {
   font-family: 'Computer Modern Serif';
   font-size: 21px; }
-#content .highlight code {
-  font-family: 'Computer Modern Typewriter Light';
-  font-size: 19px; }
+
+#content {
+  font-size: 21px; }
+  #content code, #content .highlight span {
+    font-family: 'Computer Modern Typewriter Light' !important; }
+  #content .meta {
+    font-size: 18px; }
+  #content p {
+    text-align: justify; }
+  #content .highlight code {
+    font-size: 18px; }
+
+footer {
+  font-size: 19px;
+  font-style: italic;
+  padding-bottom: 20px; }
 
 /*# sourceMappingURL=main.css.map */
