@@ -1,16 +1,14 @@
-@import 'bourbon/bourbon';
 @import 'bootstrap.min.css';
-@import 'typography.css';
 
-* {
-  font-family: 'charterregular' !important;
+#content {
+  p {
+    font-family: 'Computer Modern Serif';
+    font-size: 21px;
+  }
+
+  .highlight code {
+    font-family: 'Computer Modern Typewriter Light';
+    font-size: 19px;
+  }
 }
 
-#brand {
-  font-size: 46px;
-}
-
-.post p, .post-summary {
-  font-size: 26px;
-  margin-bottom: 20px;
-}
