@@ -1,65 +1,45 @@
 ---
 ---
 
-body {
-  background-color: #111;
-}
+#big-header {
+  height: 100vh;
+  padding-top: 23vh;
 
-#big-header-container {
-  text-align: center;
-  margin-top: 10%;
+  background-color: #222;
 
-  font-family: 'Abril Fatface', cursive;
-  color: #EEE;
+  h1, h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: #FFF;
 
-  #big-header {
-    font-size: 110px;
-    letter-spacing: 1px;
+    text-align: center;
   }
 
-  #separator {
-    width: 60%;
+  h1 {
+    font-size: 80px;
   }
 
-  #big-caption {
-    font-family: 'Cardo', serif;
-
-    font-size: 40px;
-  }
-
-  #spacer {
-    margin-top: 1%;
-  }
-
-  #small-caption {
-    font-family: 'Cardo', serif;
-
-    font-size: 25px;
+  h2 {
+    font-size: 30px;
   }
 }
 
-#contacts {
-  $contact-gray: #BBB;
-
-  margin-top: 7%;
-  width: 40%;
+#contact-row {
+  margin-top: 60px;
+  margin-left: 0px;
+  margin-right: 0px;
 
   text-align: center;
 
   .contact-icon {
-    font-size: 600%;
-  }
-
-  a {
-    color: $contact-gray;
-    text-decoration: none;
-
-    &:hover {
-      color: #EEE;
-    }
+    font-size: 90px;
   }
 
   .contact-subtitle {
     font-size: 25px;
+  }
+
+  a {
+    color: #FFF;
+    text-decoration: none;
   }
 }
