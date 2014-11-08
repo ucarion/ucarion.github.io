@@ -13,40 +13,14 @@
     <script src="/vendor/js/jquery.min.js"></script>
     <script src="/vendor/js/bootstrap.min.js"></script>
 
-    <!-- Computer Modern Serif-->
-    <link rel="stylesheet" href="/vendor/font/computer_modern/Serif/cmun-serif.css"></link>
-
-    <!-- Computer Modern Typewriter Light-->
-    <link rel="stylesheet" href="/vendor/font/computer_modern/Typewriter Light/cmun-typewriter-light.css"></link>
-
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans'
+      rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather'
+    rel='stylesheet' type='text/css'>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/assets/css/main.css">
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <div class="header">
-            <h1>
-              <a id="brand" href="{{ site.blog_url }}">
-                <span>Ulysse's Blog</span>
-              </a>
-            </h1>
-          </div>
-
-          <div id="content">
-            {{ content }}
-          </div>
-
-          <hr>
-          <footer>
-            Hi! My name is <a href="http://ulysse.io">Ulysse Carion</a>. I
-            occasionally <a href="http://ulysse.io/blog">blog</a>. You can check
-            me out on <a href="https://github.com/ucarion">GitHub</a> or shoot
-            me <a href="mailto:ulysse@ulysse.io">an email</a>.
-          </footer>
-        </div>
-      </div>
-    </div>
+    {{ content }}
   </body>
 </html>
