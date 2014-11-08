@@ -13,8 +13,6 @@ body {
 
   margin-bottom: 70px;
 
-  background-color: #2A2C39;
-
   #post-title, #post-date {
     font-family: 'Open Sans', sans-serif;
     color: #FFF;
@@ -34,31 +32,14 @@ body {
 .post-content {
   font-family: 'Merriweather', serif;
   font-size: 21px;
+
+  .highlight code {
+    font-size: 15px;
+  }
 }
 
 .post-list .post-summary {
-
   font-size: 21px;
-}
-
-#content {
-  font-size: 21px;
-
-  code, .highlight span {
-    font-family: 'Computer Modern Typewriter Light' !important;
-  }
-
-  .meta {
-    font-size: 18px;
-  }
-
-  p {
-    text-align: justify;
-  }
-
-  .highlight code {
-    font-size: 18px;
-  }
 }
 
 footer {

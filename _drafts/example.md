@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: An Example Post
 ---
 
@@ -9,6 +9,15 @@ Lorem ipsum dolor sit amet, ut nulla fuisset scaevola ius, solet option
 democritum ad eam. Ad pro natum mucius detracto. Ut nisl facilisi mnesarchum
 sit, prompta quaestio vis id. Nam et eripuit tractatos, ad ullum hendrerit per.
 Ut his sale ipsum percipit.
+
+```rust
+// asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asd fasd fasdf asd
+// fasdf asdf asdf asdf asdf asd fasd fasdf adsfdf ssad f as dfa sdf asdf asd f
+// sdfas df asdf asd fasd f
+fn main() {
+  println!("Hello, world!");
+}
+```
 
 Usu ut lorem insolens signiferumque, case tractatos in sit. Nam te ceteros
 molestie theophrastus. Detraxit tractatos delicatissimi quo cu, soleat detraxit
