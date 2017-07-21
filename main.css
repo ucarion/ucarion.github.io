@@ -1,38 +1,101 @@
-#main-text {
-  text-align: center;
-
-  margin-top: 20vh;
+body {
+    margin: 0;
 }
 
-h1, h3, h4 {
-  font-weight: normal;
+.full-page-panel {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
 }
 
-#heart {
-  font-size: 100px;
-  margin-bottom: 50px;
+.panel-0 {
+    background-color: #053a51;
 }
 
-#big-name {
-  font-family: 'Cardo', serif;
-  font-size: 75px;
-
-  margin-top: 0;
+.panel-0-big-text {
+    color: #eee;
+    font-family: 'Eczar', serif;
+    width: 95vw;
 }
 
-#subtitle {
-  font-family: 'Vollkorn', serif;
-
-  text-transform: uppercase;
-  font-size: 25px;
+.panel-0-big-text-quote {
+    font-size: 30px;
+    text-align: center;
 }
 
-#links {
-  font-family: 'Vollkorn', serif;
-
-  font-size: 20px;
+.panel-0-big-text-author {
+    font-size: 15px;
+    text-align: right;
 }
 
-#links a {
-  color: black;
+.panel-1 {
+    background-color: #fff985;
+}
+
+.panel-1-big-text {
+    color: #111;
+    font-family: 'Zilla Slab', sans-serif;
+}
+
+.panel-1-big-text-icon {
+    font-size: 70px;
+    text-align: center;
+}
+
+.panel-1-big-text-name {
+    font-size: 45px;
+    text-align: center;
+}
+
+.panel-1-big-text-about {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.panel-1-big-text-about-line {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.panel-1-big-text-links {
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.panel-1-big-text-link > a {
+    color: #3d3dc3;
+}
+
+/* The styles above are for small screens. Here, we override stuff for larger
+ * screens. */
+@media screen and (min-width: 501px) {
+    .panel-0-big-text {
+        width: 80vw !important;
+    }
+
+    .panel-0-big-text-quote {
+        font-size: 40px !important;
+    }
+
+    .panel-0-big-text-author {
+        font-size: 20px !important;
+    }
+
+    .panel-1-big-text-icon {
+        font-size: 80px !important;
+    }
+
+    .panel-1-big-text-name {
+        font-size: 55px !important;
+    }
+
+    .panel-1-big-text-about-line {
+        font-size: 25px !important;
+    }
+
+    .panel-1-big-text-links {
+        font-size: 25px !important;
+    }
 }
